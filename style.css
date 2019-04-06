@@ -1,0 +1,233 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #5d4954;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 5px;
+    background-color: rgb(226, 226, 226);
+    margin: 3px;
+}
+
+#welcome {
+    margin: auto;
+    width: 600px;
+    margin-top: 100px;
+    
+}
+
+h2 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: cursive;
+    text-align: center;
+}
+
+/* For mobile devices  */
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 10vh; 
+        background-color: #7e7e7e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translate(0%);
+}
+
+
+/**
+* This section styles the forms 
+*/
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    /* background: url() no-repeat; */
+    background-color: #f9f9f9;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Login form box */
+#login-box {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color: white; */
+}
+
+#change-pass-box {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color: white; */
+}
+
+/* Register staff form box */
+#register-box {
+    width: 450px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border: 1px solid #5d4954;
+    border-radius: 5px;
+}
+
+#register-box h1 {
+    border: 2px solid #5d4954;
+    background-color: #5d4954;
+    color: white;
+    margin-bottom: 0px;
+}
+
+#register-box input {
+    font-size: 20px;
+}
+
+#reg-staff-table {
+    background-color: #dfd5d5;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding: 13px 0;
+    border-bottom: 5px solid #7e7e7e;
+}
+
+/* Login form input fields */
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #7e7e7e;
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    /* color: white; */
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 10px;
+}
+
+
+.btn {
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid #7e7e7e;
+    color: white;
+    background: #5d4954;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-to-dashboard {
+    margin-top: 40px;
+    margin-right: 30px;
+    float: right;
+}
+
+.back-to-dashboard a {
+    text-decoration: none;font-size: 20px;
+    color: #272525;
+}
+
+.back-to-dashboard a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+}
